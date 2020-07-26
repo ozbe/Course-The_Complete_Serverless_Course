@@ -5,7 +5,7 @@ Resources:
   AutoConfirm:
     Type: AWS::Serverless::Function
     Properties:
-      Runtime: nodejs8.10
+      Runtime: nodejs12.x
       Handler: auto-confirm-trigger.handler
       CodeUri: ./src
       Description: Auto confirms the users signup on Cognito
@@ -15,7 +15,7 @@ Resources:
   SetBathersPreference:
     Type: AWS::Serverless::Function
     Properties:
-      Runtime: nodejs8.10
+      Runtime: nodejs12.x
       Handler: set-user-bathers-preference.handler
       CodeUri: ./src
       Description: Retreives the users bathers preference
@@ -42,7 +42,7 @@ Resources:
   BathersPreference:
     Type: AWS::Serverless::Function
     Properties:
-      Runtime: nodejs8.10
+      Runtime: nodejs12.x
       Handler: get-user-bathers-preference.handler
       CodeUri: ./src
       Description: Retreives the users bathers preference

@@ -2,7 +2,7 @@ service: datalyzer
 
 provider:
   name: aws
-  runtime: nodejs8.10
+  runtime: nodejs12.x
   profile: datalyzer-admin
   region: us-east-1
   iamRoleStatements:
